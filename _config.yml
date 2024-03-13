@@ -171,12 +171,12 @@ kramdown:
 
 # Collections
 collections:
-  docs:
+  Recent-projects:
     output: true
-    permalink: /:collection/:path/
-  portfolio:
+    permalink: /projects/:collection/:path/
+  Previous-projects:
     output: true
-    permalink: /:collection/:path/
+    permalink: /projects/:collection/:path/
 
 
 # Defaults
@@ -192,6 +192,7 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
   # _pages
   - scope:
       path: "_pages"
@@ -213,7 +214,14 @@ defaults:
         nav: "docs"
   - scope:
       path: ""
-      type: portfolio
+      type: Recent-project
+    values:
+      layout: single
+      author_profile: false
+      share: true
+  - scope:
+      path: ""
+      type: Previous-project
     values:
       layout: single
       author_profile: false
