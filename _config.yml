@@ -171,12 +171,15 @@ kramdown:
 
 # Collections
 collections:
-  Recent-projects:
-    output: true
-    permalink: /projects/:collection/:path/
   Previous-projects:
     output: true
     permalink: /projects/:collection/:path/
+  Recent-projects:
+    output: true
+    permalink: /projects/:collection/:path/
+  members:
+    output: true
+    permalink: /about/:path
 
 
 # Defaults
@@ -207,21 +210,31 @@ defaults:
     values:
       layout: single
       read_time: false
-      author_profile: false
+      author_profile: true
       share: false
-      comments: false
+      comments: true
       sidebar:
         nav: "docs"
+  # Collection: Recent project
   - scope:
       path: ""
-      type: Recent-project
+      type: Recent-projects
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true
+  # Collection: Previous projects
   - scope:
       path: ""
-      type: Previous-project
+      type: Previous-projects
+    values:
+      layout: single
+      author_profile: true
+      share: true
+  # About page
+  - scope:
+      path: ""
+      type: members
     values:
       layout: single
       author_profile: false
@@ -271,7 +284,7 @@ whitelist:
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
-  path: /categories/
+  path: /research/
 tag_archive:
   type: liquid
   path: /tags/

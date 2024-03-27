@@ -9,13 +9,16 @@ author_profile: true
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 {% capture written_label %}'None'{% endcapture %}
 
-{% for collection in site.collections %}
-  {% unless collection.output == false or collection.label == "posts" %}
+{% assign collections = site.collections | sort: 'label' | reverse %}
+{% for collection in collections %}
+  {% unless collection.output == false or collection.label == "posts" or collection.label == "members" %}
     <section class="taxonomy__section">
       {% capture label %}{{ collection.label }}{% endcapture %}
       {% if label != written_label %}
-        <h2 id="{{ label | slugify }}" class="archive__subtitle">{{ label | replace: "-", " "}}</h2>
-        {% capture written_label %}{{ label }}{% endcapture %}
+      {% assign name = label | split: "-" | first| downcase%}
+        <h2 id="{{ label | slugify }}" class="archive__subtitle">
+          <a href="{{'/projects/' | append: name}}">{{ label | replace: "-", " "}}</a>
+        </h2>
       {% endif %}
       <div class="entries-{{ entries_layout }}">
         {% for post in collection.docs %}
