@@ -9,9 +9,10 @@ sidebar:
   - text: |
       ---
       <i class="fab fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/nam-bui-237722207/)
-      
+
       <i class="fas fa-envelope"></i> nambui1604@gmail.com
 toc: true
+order: 6
 ---
 
 ## Education

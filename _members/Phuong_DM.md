@@ -9,9 +9,10 @@ sidebar:
   - text: |
       ---
       <i class="fab fa-linkedin"></i> [LinkedIn](www.linkedin.com/in/dinh-phuong-7ab226266)
-      
+
       <i class="fas fa-envelope"></i> phuong.dm2@vinuni.edu.vn
 toc: true
+order: 5
 ---
 
 ## Education

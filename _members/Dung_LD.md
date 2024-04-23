@@ -1,12 +1,12 @@
 ---
-title: "Assoc.Prof.Dr Dung Le Duy"
-excerpt: "Associate Professor at College of Engineering and Computer Science, VinUniversity"
+title: "Assist.Prof.Dr Dung Le Duy"
+excerpt: "Assistant Professor at College of Engineering and Computer Science, VinUniversity"
 header:
   teaser: /assets/images/team_members/DungLD.png
 sidebar:
   - image: /assets/images/team_members/DungLD.png
     image_alt: "logo"
-    text: "Associate Professor at College of Engineering and Computer Science, VinUniversity"
+    text: "Assistant Professor at College of Engineering and Computer Science, VinUniversity"
   - text: |
       ---
       <i class="fab fa-google-scholar"></i> [Google Scholar](https://scholar.google.com/citations?hl=en&user=0eoYR1gAAAAJ)
@@ -17,7 +17,7 @@ sidebar:
 
       <i class="fas fa-envelope"></i> dung.ld@vinuni.edu.vn
 toc: true
-
+order: 2
 ---
 
 ## Education Background

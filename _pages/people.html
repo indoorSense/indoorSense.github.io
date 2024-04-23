@@ -1,0 +1,33 @@
+---
+layout: archive
+permalink: /people/
+collection: members
+entries_layout: grid
+classes: wide
+author_profile: True
+---
+
+{% assign entries_layout = page.entries_layout %}
+
+{% assign labels = "Professor,Associate Professor,Assistant Professor,PostDoc,PhD,Master,Bachelor" | split: "," %}
+{% assign order = -1 %}
+{% assign posts = site.members | sort: "order" %}
+{% for post in posts%}
+  {% if post.order != order %}
+    {% if order != -1%}
+        </div>
+        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+      </section>
+    {% endif %}
+    {% assign order = post.order | to_i%}
+    <section class="taxonomy__section">
+      <h2 id="{{ label | slugify }}" class="archive__subtitle">
+        {{ labels[order] }}
+      </h2>
+      <div class="entries-{{ entries_layout }}">
+      
+  {% endif %}
+  {% include archive-single.html type=entries_layout %}
+{% endfor %}
+  </div>
+</section>

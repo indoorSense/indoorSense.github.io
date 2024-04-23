@@ -13,6 +13,7 @@ sidebar:
 
       <i class="fas fa-envelope"></i> Datmv@huce.edu.vn
 toc: true
+order: 4
 ---
 
 ## Education

@@ -17,7 +17,7 @@ sidebar:
 
       <i class="fas fa-envelope"></i> nhan.nd@vinuni.edu.vn
 toc: true
-
+order: 3
 ---
 
 ## Education Background

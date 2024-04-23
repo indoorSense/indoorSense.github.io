@@ -1,5 +1,4 @@
 ---
-title: Blog
 layout: categories_posts
 permalink: /blog/
 entries_layout: grid
