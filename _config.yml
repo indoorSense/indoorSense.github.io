@@ -179,7 +179,7 @@ collections:
     permalink: /projects/:collection/:path/
   members:
     output: true
-    permalink: /about/:path
+    permalink: /people/:path
 
 
 # Defaults
