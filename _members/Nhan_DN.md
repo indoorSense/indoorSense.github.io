@@ -9,7 +9,7 @@ sidebar:
     text: "Doctor of Philosophy in Mechanical Engineering"
   - text: |
       ---
-      <i class="fab fa-google-scholar"></i> [Google Scholar](https://scholar.google.com/citations?hl=en&user=0eoYR1gAAAAJ)
+      <i class="fab fa-google-scholar"></i> [Google Scholar](https://scholar.google.com/citations?user=sY_vyyAAAAAJ&hl=en)
       
       <i class="fab fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/ngodinhnhan)
 
