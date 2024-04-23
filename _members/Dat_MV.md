@@ -1,5 +1,5 @@
 ---
-title: "Msc. Dat Van Mac"
+title: "MS Dat Mac Van"
 excerpt: "PhD student in Civil Engineering"
 header:
   teaser: /assets/images/team_members/DatMV.jpg

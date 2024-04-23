@@ -1,5 +1,5 @@
 ---
-title: "Assist.Prof.Dr Dung Le Duy"
+title: "Dr. Dung Le Duy"
 excerpt: "Assistant Professor at College of Engineering and Computer Science, VinUniversity"
 header:
   teaser: /assets/images/team_members/DungLD.png

@@ -9,7 +9,7 @@ author_profile: True
 
 {% assign entries_layout = page.entries_layout %}
 
-{% assign labels = "Professor,Associate Professor,Assistant Professor,PostDoc,PhD,Master,Bachelor" | split: "," %}
+{% assign labels = "Professor,Associate Professor,Principal Investigator,Postdoctoral Researcher,PhD Students,Master Students,Bachelor Students" | split: "," %}
 {% assign order = -1 %}
 {% assign posts = site.members | sort: "order" %}
 {% for post in posts%}

@@ -1,5 +1,5 @@
 ---
-title: "Dinh Mai Phuong"
+title: "B.Sc Phuong Dinh Mai"
 excerpt: "Master student in Computer Science"
 header:
   teaser: /assets/images/team_members/PhuongDM.jpg

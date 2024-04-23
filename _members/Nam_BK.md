@@ -1,5 +1,5 @@
 ---
-title: "Bui Khanh Nam"
+title: "Nam Bui Khanh"
 excerpt: "Bachelor student in Mechanical Engineering"
 header:
   teaser: /assets/images/team_members/NamBK.jpg

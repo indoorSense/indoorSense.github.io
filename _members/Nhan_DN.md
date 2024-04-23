@@ -1,6 +1,6 @@
 ---
-title: "Dr. Nhan Dinh Ngo"
-excerpt: "PostDoc at VinUniversity-UIUC in Mechanical Engineering"
+title: "Dr. Nhan Ngo Dinh"
+excerpt: "Postdoc at VinUniversity-UIUC in Mechanical Engineering"
 header:
   teaser: /assets/images/team_members/NhanDN.jfif
 sidebar:

@@ -1,5 +1,5 @@
 ---
-title: "Nguyen Quy Duc"
+title: "Duc Nguyen Quy"
 excerpt: "Bachelor student in Mechanical Engineering"
 header:
   teaser: /assets/images/team_members/DucNQ.jpg
