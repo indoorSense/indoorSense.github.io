@@ -31,3 +31,28 @@ author_profile: True
 {% endfor %}
   </div>
 </section>
+
+{% assign fullnames = "Thai Khanh Phong;Kok-Seng Wong;Tran Ngoc Quang;Nguyen Lu Phuong;Nguyen Hoang Ha;A.Prof. Vishal Verma;Prof. Helen Nguyen;Prof. Andrew Taylor Robinson;AProf. Yan Jinhui" | split: ";" %}
+{% assign descriptions = "PhD Associate Professor University of Queensland, Australia;PhD Associate Professor VinUniversity Vietnam;PhD HUEC;PhD HCMUNRE;USTH;UIUC;UIUC;VinUni;UIUC" | split: ";" %}
+{% assign names = "phong,kok,quang,phuong,ha,verma,nguyen,robinson,jinhui" | split: "," %}
+
+<section class="taxonomy__section">
+  <h2 class="archive__subtitle"> Partners </h2>
+  <div class="entries-{{ entries_layout }}">
+    {% for id in (0..8) %}
+      {% assign name = names[id] %}
+      {% assign fullname = fullnames[id] %}
+      {% assign description = descriptions[id] %}
+      <div class="grid__item">
+        <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+          <div class="archive__image-partner">
+            <img src="{{ '/assets/images/team_members/partners/' | append: name | append: '.jpg'}}" alt="{{ name }}">
+          </div>
+          <h2 class="archive__item-title no_toc" itemprop="headline">{{ fullname }}</h2>
+          <p class="archive__item-excerpt" itemprop="description"> {{ description | markdownify | strip_html | truncate: 160}} </p>
+        </article>
+      </div>
+    {% endfor %}
+  </div>
+  <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+</section>

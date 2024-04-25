@@ -3,9 +3,9 @@ layout: splash
 permalink: /
 hidden: true
 header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/unsplash-image-3.jpg
-excerpt: "This will be our group photo"
+  # overlay_color: "#5e616c"
+  image: assets/images/team_members/group_photo.jpg
+# excerpt: "This will be our group photo"
 intro: 
   - excerpt: "<h1> About us </h1>"
 ---

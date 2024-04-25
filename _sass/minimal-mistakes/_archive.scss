@@ -95,6 +95,16 @@
   }
 }
 
+.archive__image-parner {
+  position: relative;
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+  }
+}
+
 .archive__item-caption {
   position: absolute;
   bottom: 0;

@@ -82,7 +82,7 @@ social:
 # Site Author
 author:
   name             : IndoorSense # *name is a YAML reference pointing to the &anchor earlier
-  # avatar           : "/assets/images/michael-rose.jpg"
+  avatar           : assets/images/team_members/group_avatar.jpg
   bio              : "Smart Indoor Air Quality Control System for Healthier and Greener Buildings"
   location         : "Hanoi, VN"
   links:
