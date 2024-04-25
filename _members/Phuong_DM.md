@@ -12,6 +12,7 @@ sidebar:
 
       <i class="fas fa-envelope"></i> phuong.dm2@vinuni.edu.vn
 toc: true
+toc_sticky: true
 order: 5
 ---
 

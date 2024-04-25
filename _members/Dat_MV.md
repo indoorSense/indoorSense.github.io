@@ -1,23 +1,24 @@
 ---
 title: "MS Dat Mac Van"
-excerpt: "PhD student in Civil Engineering"
+excerpt: "Master in Enviromental Engineering"
 header:
   teaser: /assets/images/team_members/DatMV.jpg
 sidebar:
   - image: /assets/images/team_members/DatMV.jpg
     image_alt: "logo"
-    text: "Master in Civil Engineering at Hanoi University of Civil Engineering"
+    text: "Master in Enviromental Engineering at Hanoi University of Civil Engineering"
   - text: |
       ---
       <i class="fa-solid fa-link"></i> [Personal Website](https://moitruong.huce.edu.vn/ths-mac-van-dat)
 
       <i class="fas fa-envelope"></i> Datmv@huce.edu.vn
 toc: true
+toc_sticky: true
 order: 4
 ---
 
 ## Education
-- 2020 - 2021: Master of  Environmental Engineering
+- 2020 - 2021: Master of Enviromental Engineering
   * Project: Research on factors affecting indoor temperature, impact of temperature on electricity consumption and residents' health in households in Vietnam.
   * Hanoi University of Civil Engineering, Hanoi, Vietnam
 - 2011 -2016: Bachelor of Civil Engineer in the field of Building Service Engineering

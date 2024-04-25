@@ -12,6 +12,7 @@ sidebar:
 
       <i class="fas fa-envelope"></i> nambui1604@gmail.com
 toc: true
+toc_sticky: true
 order: 6
 ---
 

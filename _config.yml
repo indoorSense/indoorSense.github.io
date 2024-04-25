@@ -203,6 +203,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      classes: wide
   # _docs
   - scope:
       path: ""
@@ -223,6 +224,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
+      classes: wide
   # Collection: Previous projects
   - scope:
       path: ""
@@ -231,6 +233,8 @@ defaults:
       layout: single
       author_profile: true
       share: true
+      classes: wide
+    
   # About page
   - scope:
       path: ""

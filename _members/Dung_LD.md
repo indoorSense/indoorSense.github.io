@@ -17,6 +17,7 @@ sidebar:
 
       <i class="fas fa-envelope"></i> dung.ld@vinuni.edu.vn
 toc: true
+toc_sticky: true
 order: 2
 ---
 
