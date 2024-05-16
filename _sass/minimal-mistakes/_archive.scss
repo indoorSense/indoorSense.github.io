@@ -222,6 +222,11 @@
   .archive__item-title {
     margin-top: 0.5em;
     font-size: $type-size-5;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* number of lines to show */
+            line-clamp: 6; 
+    -webkit-box-orient: vertical;
   }
 
   .archive__item-excerpt {

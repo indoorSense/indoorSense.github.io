@@ -71,6 +71,7 @@ body {
 .page__title {
   margin-top: 0;
   line-height: 1;
+  // text-align: justify;
 
   a {
     color: $text-color;
@@ -88,8 +89,10 @@ body {
 }
 
 .page__content {
+  text-align: justify; 
+
   h2 {
-    padding-bottom: 0.5em;
+    padding-bottom: 0.3em;
     border-bottom: 1px solid $border-color;
   }
 
@@ -549,6 +552,7 @@ body {
 }
 
 .page__related-title {
+  text-align: justify;
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;

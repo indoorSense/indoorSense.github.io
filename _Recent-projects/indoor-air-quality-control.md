@@ -1,14 +1,12 @@
 ---
 title: "Smart Indoor Air Quality Control System for Healthier and Greener Buildings"
 header:
-  teaser: assets/images/project/VinUni-logo.png
-gallery:
-  - url: assets/images/project/indoor-air-quality-control.png
-    image_path: assets/images/project/indoor-air-quality-control.png
-    alt: "placeholder image 1"
+  teaser: assets/images/project/indoor_air/VinUni-logo.png
 toc: true
 toc_sticky: true
 ---
+
+![Illustration image](/assets/images/project/indoor_air/indoor-air-quality-control.png "3D illustration")
 
 ## Principal Investigators &amp; Key Members
 * [Vishal Verma](https://cee.illinois.edu/directory/profile/vverma)
@@ -33,5 +31,3 @@ toc_sticky: true
 
 ## Project Description
 The quality of the indoor environment has a critical impact on people’s health because on average, we spend more than 90% of our time indoors. Providing a healthy and safe indoor environment can save lives, reduce diseases, and increase our quality of life. Elevated levels of indoor air pollutants such as black carbon and particulate matter in different buildings in urban areas of Vietnam are similar to or sometimes even higher than the level of those pollutants outdoors exceeding the WHO guidelines and thus posing an elevated risk for the occupants. Better management of indoor environmental quality and saving energy consumption at the same time is of critical national and international significance. This project aims at building a virtual platform that offers interactive interfaces for infection control and facility managers to make informed and optimal intervention strategies as per different intended uses of the multi-used indoor environments.
-
-{% include gallery caption="An illustration image" type="center" %}
