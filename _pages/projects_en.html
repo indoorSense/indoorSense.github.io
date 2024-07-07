@@ -1,0 +1,40 @@
+---
+layout: archive
+permalink: /projects/
+entries_layout: grid
+author_profile: true
+classes: wide
+language: en
+---
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+{% capture written_label %}'None'{% endcapture %}
+
+{% assign collections = site.collections | sort: 'label' | reverse %}
+{% for collection in collections %}
+  {% unless collection.output == false or collection.label == "posts" or collection.label == "members" %}
+    <section class="taxonomy__section">
+      {% capture label %}{{ collection.label }}{% endcapture %}
+      {% if label != written_label %}
+      {% assign title = label | split: "-" %}
+      {% capture titlecase %}
+        {% for word in title %}
+          {{ word | capitalize }}
+        {% endfor %}
+      {% endcapture %}
+      {% assign name = label[0] | downcase %}
+        <h2 id="{{ label | slugify }}" class="archive__subtitle">
+          <a href="{{'/projects/' | append: name}}">{{titlecase}}</a>
+        </h2>
+      {% endif %}
+      <div class="entries-{{ entries_layout }}">
+        {% for post in collection.docs %}
+          {% if post.language == page.language %}
+            {% include archive-single.html type=entries_layout %}
+          {% endif %}
+        {% endfor %}
+      </div>
+      <a href="#page-title" class="back-to-top">{{ site.data.ui-text[page.language].back_to_top | default: 'Back to Top' }} &uarr;</a>
+    </section>
+  {% endunless %}
+{% endfor %}

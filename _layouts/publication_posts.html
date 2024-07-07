@@ -16,7 +16,9 @@ layout: archive
 </ul> -->
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-{% assign postsByYear = site.posts | where_exp: "item", "item.categories contains 'publications'" | group_by_exp: 'new', 'new.date | date: "%Y"' %}
+{% assign postsByYear = site.posts | where_exp: "item", "item.categories contains 'publications'" 
+                                   | where: "language", page.language
+                                   | group_by_exp: 'new', 'new.date | date: "%Y"' %}
 {% for year in postsByYear %}
   <section id="{{ year.name }}" class="taxonomy__section">
     <h2 class="archive__subtitle">{{ year.name }}</h2>
@@ -25,6 +27,6 @@ layout: archive
         {% include archive-single.html type=entries_layout %}
       {% endfor %}
     </div>
-    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[page.language].back_to_top | default: 'Back to Top' }} &uarr;</a>
   </section>
 {% endfor %}

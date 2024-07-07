@@ -1,0 +1,11 @@
+---
+layout: single
+title:  "[Working paper] Influence of Air Conditioning (AC) and Air Purifiers (AP) on Indoor PM2.5 in Urban Residential Houses in Hanoi, Vietnam"
+date:   2024-04-25 11:54:40 +0700
+categories: publications
+tags: research publication working_paper
+language: en
+---
+Author: Mac Van Dat, Bui Khanh Nam, Dung D. Le, V.Vishal, J. Jinhui, Nguyen V. Hoa, Tran Ngoc Quang
+
+We are working on it

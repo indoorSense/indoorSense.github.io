@@ -1,0 +1,59 @@
+---
+layout: archive
+permalink: /people/vi
+collection: members
+entries_layout: grid
+classes: wide
+author_profile: True
+language: vi
+---
+
+{% assign entries_layout = page.entries_layout %}
+
+{% assign labels = "Giáo sư,Phó giáo sư,Trưởng nhóm nghiên cứu,Nghiên cứu sinh sau Tiến sĩ,Ngiên cứu sinh,Học viên cao học,Sinh viên" | split: "," %}
+{% assign order = -1 %}
+{% assign posts = site.members | where: "language", page.language | sort: "order" %}
+{% for post in posts%}
+  {% if post.order != order %}
+    {% if order != -1%}
+        </div>
+        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[page.language].back_to_top | default: 'Back to Top' }} &uarr;</a>
+      </section>
+    {% endif %}
+    {% assign order = post.order | to_i%}
+    <section class="taxonomy__section">
+      <h2 id="{{ label | slugify }}" class="archive__subtitle">
+        {{ labels[order] }}
+      </h2>
+      <div class="entries-{{ entries_layout }}">
+      
+  {% endif %}
+  {% include archive-single.html type=entries_layout %}
+{% endfor %}
+  </div>
+</section>
+
+{% assign fullnames = "Phó giáo sư Phong Khanh Thai;Phó giáo sư Kok-Seng Wong;Phó giáo sư Trần Ngọc Quang;Phó giáo sư Nguyễn Lư Phương;Tiến sĩ Nguyễn Hoàng Hà;Phó giáo sư Vishal Verma;Giáo sư Helen Nguyen;Giáo sư Andrew Taylor Robinson;Phó giáo sư Yan Jinhui" | split: ";" %}
+{% assign descriptions = "Đại học Queensland;Đại học VinUniversity;Đại học Xây dựng Hà nội;Đại học Tài Nguyên và Môi trường Thành phố Hồ Chí Minh;Đại học Khoa học tự nhiên, Hà Nội;University of Illinois at Urbana-Champaign;Đại học Illinois tại Urbana-Champaign;Đại học VinUniversity;Đại học Illinois tại Urbana-Champaign" | split: ";" %}
+{% assign names = "phong,kok,quang,phuong,ha,verma,nguyen,robinson,jinhui" | split: "," %}
+
+<section class="taxonomy__section">
+  <h2 class="archive__subtitle"> Partners </h2>
+  <div class="entries-{{ entries_layout }}">
+    {% for id in (0..8) %}
+      {% assign name = names[id] %}
+      {% assign fullname = fullnames[id] %}
+      {% assign description = descriptions[id] %}
+      <div class="grid__item">
+        <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+          <div class="archive__image-partner">
+            <img src="{{ '/assets/images/team_members/partners/' | append: name | append: '.jpg'}}" alt="{{ name }}">
+          </div>
+          <h2 class="archive__item-title no_toc" itemprop="headline">{{ fullname }}</h2>
+          <p class="archive__item-excerpt" itemprop="description"> {{ description | markdownify | strip_html | truncate: 160}} </p>
+        </article>
+      </div>
+    {% endfor %}
+  </div>
+  <a href="#page-title" class="back-to-top">{{ site.data.ui-text[page.language].back_to_top | default: 'Back to Top' }} &uarr;</a>
+</section>

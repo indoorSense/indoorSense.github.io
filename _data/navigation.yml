@@ -1,12 +1,24 @@
 # main links
 main:
-  - title: "News"
-    url: /news/
-  - title: "Blog"
-    url: /blog/
-  - title: "Projects"
-    url: /projects/
-  - title: "Publications"
-    url: /publications/
-  - title: "People"
-    url: /people/
+  en:
+    - title: "News"
+      url: /news/
+    - title: "Blog"
+      url: /blog/
+    - title: "Projects"
+      url: /projects/
+    - title: "Publications"
+      url: /publications/
+    - title: "People"
+      url: /people
+  vi:
+    - title: "Tin mới"
+      url: /news/vi
+    - title: "Blog"
+      url: /blog/vi
+    - title: "Dự án"
+      url: /projects/vi
+    - title: "Báo cáo khoa học"
+      url: /publications/vi
+    - title: "Thành viên"
+      url: /people/vi

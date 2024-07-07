@@ -10,13 +10,15 @@ remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "vn-VN"
+locale                   : "vi"
 title                    : "IndoorSense"
 title_separator          : "-"
-subtitle                 : "AI and Simulation for Smart Indoor Spaces"
-name                     : &name "Phuong Dinh Mai" # &name is a YAML anchor which can be *referenced later
+subtitle                 : 
+  en: "AI and Simulation for Smart Indoor Spaces"
+  vi: "AI và Mô phỏng cho Không gian trong phòng"
+name                     : &name "IndoorSense" # &name is a YAML anchor which can be *referenced later
 description              : &description "Powered by Jekyll & Minimal Mistakes."
-url                      : https://indoorsense.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://indoorsense.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "indoorsense"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -83,7 +85,9 @@ social:
 author:
   name             : IndoorSense # *name is a YAML reference pointing to the &anchor earlier
   avatar           : assets/images/team_members/group_avatar.jpg
-  bio              : "Smart Indoor Air Quality Control System for Healthier and Greener Buildings"
+  bio              :
+    en: "Smart Indoor Air Quality Control System for Healthier and Greener Buildings"
+    vi: "Hệ thống kiểm soát chất lượng không khí trong nhà thông minh cho các tòa nhà lành mạnh và xanh hơn"
   location         : "Hanoi, VN"
   links:
     - label: "Project website"
@@ -171,12 +175,15 @@ kramdown:
 
 # Collections
 collections:
-  Previous-projects:
+  posts:
     output: true
-    permalink: /projects/:collection/:path/
-  Recent-projects:
+    permalink: /:path/
+  previous-projects:
     output: true
-    permalink: /projects/:collection/:path/
+    permalink: /projects/previous/:path/
+  recent-projects:
+    output: true
+    permalink: /projects/recent/:path/
   members:
     output: true
     permalink: /people/:path
@@ -219,7 +226,7 @@ defaults:
   # Collection: Recent project
   - scope:
       path: ""
-      type: Recent-projects
+      type: recent-projects
     values:
       layout: single
       author_profile: true
@@ -227,7 +234,7 @@ defaults:
   # Collection: Previous projects
   - scope:
       path: ""
-      type: Previous-projects
+      type: previous-projects
     values:
       layout: single
       author_profile: true
@@ -249,10 +256,10 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+# permalink: /en/:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -284,9 +291,7 @@ whitelist:
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
 #  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path>/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /research/
+
 tag_archive:
   type: liquid
   path: /tags/

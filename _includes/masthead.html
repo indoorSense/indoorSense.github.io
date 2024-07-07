@@ -9,10 +9,12 @@
         {% endunless %}
         <a class="site-title" href="{{ '/' | relative_url }}">
           {{ site.masthead_title | default: site.title }}
-          {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
+          {% if site.subtitle %}
+            <span class="site-subtitle">{{ site.subtitle[page.language] }}</span>
+          {% endif %}
         </a>
         <ul class="visible-links">
-          {%- for link in site.data.navigation.main -%}
+          {%- for link in site.data.navigation.main[page.language] -%}
             <li class="masthead__menu-item">
               <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
             </li>
@@ -20,12 +22,23 @@
         </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
+          <span class="visually-hidden">{{ site.data.ui-text[page.language].search_label | default: "Toggle search" }}</span>
           <i class="fas fa-search"></i>
         </button>
         {% endif %}
+        <div class="switch">
+          {% if page.language == 'vi' %}
+            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" onchange=redirectpage()>
+          {% else %}
+            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" onchange=redirectpage() checked>
+          {% endif %}
+          
+          <label for="language-toggle"></label>
+          <span class="on">vi</span>
+          <span class="off">en</span>
+        </div>
         <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
+          <span class="visually-hidden">{{ site.data.ui-text[page.language].menu_label | default: "Toggle menu" }}</span>
           <div class="navicon"></div>
         </button>
         <ul class="hidden-links hidden"></ul>
@@ -33,3 +46,24 @@
     </div>
   </div>
 </div>
+
+<script>
+  function redirectpage() {
+    var language = document.getElementById("language-toggle").checked? "en" : 'vi';
+    var other_lang = language == 'vi'? 'en' : 'vi';
+    var paths = window.location.href.split('/');
+    if (paths[paths.length-1] == '') {
+      paths.pop();
+    }
+    var pos = paths.indexOf(other_lang);
+    if (pos == -1) {
+      paths.push(language);
+    } else if (pos == paths.length-1) {
+      paths.pop();
+    } else {
+      paths[pos] = language;
+    }
+    console.log(paths);
+    window.location = paths.join('/');
+  }
+</script>

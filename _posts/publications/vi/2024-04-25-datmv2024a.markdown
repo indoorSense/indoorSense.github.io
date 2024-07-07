@@ -1,0 +1,11 @@
+---
+layout: single
+title:  "[Working paper] Comparison of energy consumption and thermal comfort between rooms with inverter and non-inverter air conditioning in Hanoi, Vietnam"
+date:   2024-04-25 11:54:40 +0700
+categories: publications
+tags: research publication working_paper
+language: vi
+---
+Tác giả: Mạc Văn Đạt, Bùi Khánh Nam, Lê Duy Dũng, Nguyễn Việt Hoà, Trần Ngọc Quang
+
+Đang cập nhật

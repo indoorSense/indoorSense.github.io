@@ -8,6 +8,10 @@
   {% assign entries = entries | reverse %}
 {% endif %}
 
+{% if include.language %}
+  {% assign entries = entries | where: "language", include.language %}
+{% endif %}
+
 {%- for post in entries -%}
   {%- unless post.hidden -%}
     {% include archive-single.html %}
