@@ -1,5 +1,5 @@
 ---
-title: "Nam Bui Khanh"
+title: "Bùi Khánh Nam"
 excerpt: "Sinh viên đại học chuyên ngành Cơ khí"
 header:
   teaser: /assets/images/team_members/NamBK.jpg
