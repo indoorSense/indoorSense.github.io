@@ -11,16 +11,16 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "vi"
-title                    : "IndoorSense"
+title                    : "IndoorCare"
 title_separator          : "-"
 subtitle                 : 
   en: "AI and Simulation for Smart Indoor Spaces"
   vi: "AI và Mô phỏng cho Không gian trong phòng"
 name                     : &name "IndoorSense" # &name is a YAML anchor which can be *referenced later
 description              : &description "Powered by Jekyll & Minimal Mistakes."
-url                      : https://indoorsense.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://vinuni-indoorcare.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
-repository               : "indoorsense"
+repository               : "indoorcare"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -83,7 +83,7 @@ social:
 
 # Site Author
 author:
-  name             : IndoorSense # *name is a YAML reference pointing to the &anchor earlier
+  name             : IndoorCare # *name is a YAML reference pointing to the &anchor earlier
   avatar           : assets/images/team_members/group_avatar.jpg
   bio              :
     en: "Smart Indoor Air Quality Control System for Healthier and Greener Buildings"
@@ -98,7 +98,7 @@ author:
       # url: "https://twitter.com/mmistakes"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/indoorSense/"
+      url: "https://github.com/vinuni-indoorcare/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/mmistakes"

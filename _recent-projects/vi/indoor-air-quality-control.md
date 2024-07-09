@@ -11,7 +11,7 @@ language: vi
 
 ## Nghiên cứu viên và Các thành viên chính
 * [Vishal Verma](https://cee.illinois.edu/directory/profile/vverma)
-* [Tiến sĩ Helen Nguyễn](https://cee.illinois.edu/directory/profile/thn)
+* [Tiến sĩ Helen Nguyen](https://cee.illinois.edu/directory/profile/thn)
 * [Jinhui Yan](https://cee.illinois.edu/directory/profile/yjh)
 * [Lê Duy Dũng](https://andrew-dungle.github.io/)
 * [Tiến sĩ Kok-Seng Wong](https://vinuni.edu.vn/people/kok-seng-wong/)
