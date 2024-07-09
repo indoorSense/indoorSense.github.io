@@ -21,12 +21,13 @@ Through these assessments, we aim to achieve the following objectives in future 
 * Develop smart AI-driven intervention solutions for pig farms in Northern Vietnam
 
 
-## Descriptions
-Different experimental schemes are illustrated in detail from **Figure 1** to **Figure 3**, particularly focusing on (1) the PEDV persistence examinations under different environmental conditions that mimic those in northern Vietnam (**Figure 1**), (2) the generation of airborne PEDV from infected piglets and cleaning activities (**Figure 2**), and (3) investigation of airborne traveling distance and infectivity of PEDV generated from known infected farms (**Figure 3**). For collecting the airborne PEDV, SKC BioSamplers, as a standard bioaerosol sampling device, will be employed. Subsequently, bioassays will be used to determine airborne PEDV infectivity, and RT-PCR will be utilized to confirm the presence of airborne PEDV. 
+## Methods
+Different experimental schemes are illustrated in detail from **Figure 1** to **Figure 3**, particularly focusing on (1) the PEDV persistence examinations under different environmental conditions that mimic those in northern Vietnam (**Figure 1**), (2) the generation of airborne PEDV from infected piglets and cleaning activities (**Figure 2**), and (3) investigation of airborne traveling distance and infectivity of PEDV generated from known infected farms (**Figure 3**). 
+For collecting the airborne PEDV, an air sampler (E-FRM-200, METONE, USA), as a standard sampling device, will be employed. Subsequently, bioassays will be used to determine airborne PEDV infectivity, and RT-PCR will be utilized to confirm the presence of airborne PEDV.
 
-![Figure 1: Lab scale experiments to evaluate PEDV persistence under diffrente control conditions](/assets/images/project/nhan_project/Figure1.jpg "Figure 1: Lab scale experiments to evaluate PEDV persistence under diffrente control conditions")
-![Figure 2: Experimental schemes to evaludate the presence of airborne PEDV from infected piglets](/assets/images/project/nhan_project/Figure2.jpg "Figure 2: Experimental schemes to evaludate the presence of airborne PEDV from infected piglets")
-![Figure 3: Field experimental schemes to evaluate the air transmission of PEDV](/assets/images/project/nhan_project/Figure3.jpg "Figure 3: Field experimental schemes to evaluate the air transmission of PEDV")
+![figure 1](/assets/images/project/nhan_project/figure1_en.png "Figure 1: Examinations of PEDV persistence under different environmental conditions (temperature, UV light intensity, and relative humidity) that mimic those in northern Vietnam.") *<center><b>Figure 1</b>: Examinations of PEDV persistence under different environmental conditions (temperature, UV light intensity, and relative humidity) that mimic those in northern Vietnam.</center>*
+![figure 2](/assets/images/project/nhan_project/figure2_en.png "Figure 2: Experimental scheme for confirmation of airborne PEDV generation from infected piglets and cleaning activities.") *<center><b>Figure 2</b>: Experimental scheme for confirmation of airborne PEDV generation from infected piglets and cleaning activities.</center>*
+![figure 3](/assets/images/project/nhan_project/figure3_en.png "Field experiments of airborne traveling distance and infectivity of PEDV generated from known infected farms.") *<center><b>Figure 3</b>: Field experiments of airborne traveling distance and infectivity of PEDV generated from known infected farms.</center>*
 
 ## References
 [1] Alonso, C., Goede, D.P., Morrison, R.B. et al. Evidence of infectivity of airborne porcine epidemic diarrhea virus and detection of airborne viral RNA at long distances from infected herds. Vet Res 45, 73 (2014)
